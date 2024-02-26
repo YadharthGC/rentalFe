@@ -193,7 +193,12 @@ export default function BuildingPage() {
             {villas.map((data) => {
               return (
                 <div className="cardDiv">
-                  <div className="cardImgDiv">
+                  <div
+                    className="cardImgDiv"
+                    onClick={() => {
+                      navigate("/detail");
+                    }}
+                  >
                     <img className="cardImg" alt="imgCard" src={data.src} />
                   </div>
                   <div className="cardTextDiv">
@@ -212,7 +217,12 @@ export default function BuildingPage() {
             {villas.map((data) => {
               return (
                 <div className="cardDiv">
-                  <div className="cardImgDiv">
+                  <div
+                    className="cardImgDiv"
+                    onClick={() => {
+                      navigate("/detail");
+                    }}
+                  >
                     <img className="cardImg" alt="imgCard" src={data.src} />
                   </div>
                   <div className="cardTextDiv">

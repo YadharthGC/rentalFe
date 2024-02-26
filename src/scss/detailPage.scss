@@ -1,0 +1,205 @@
+#DetailPage {
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+  background-color: #edf1f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .header {
+    height: 10%;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .leftHead {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex: 0.2;
+    }
+    .centerHead {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex: 0.6;
+    }
+    .buyDiv,
+    .rentDiv,
+    .sellDiv {
+      cursor: pointer;
+    }
+    .buyDiv.buy {
+      color: #12a14a;
+    }
+    .rentDiv.rent {
+      color: #12a14a;
+    }
+    .sellDiv.sell {
+      color: #12a14a;
+    }
+    .rightHead {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex: 0.2;
+    }
+    .searchDiv {
+      border: solid 1px black;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      // padding: 5px;
+    }
+    .searchInp {
+      border: none;
+      width: 75%;
+      font-size: 15px;
+    }
+    .searchInp:focus {
+      outline: 0px;
+    }
+    #searchIcon {
+      background-color: #12a14a;
+      border-top-left-radius: 9px;
+      border-bottom-left-radius: 9px;
+      font-size: 35px;
+      cursor: pointer;
+      color: white;
+    }
+    .selectRound {
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+
+  .body {
+    height: 90%;
+    width: 100%;
+    display: flex;
+
+    .leftBody {
+      height: 100%;
+      flex: 0.05;
+      display: flex;
+      align-items: center;
+
+      .upDiv {
+        flex: 1;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: white;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      #homeIcon,
+      #notifyIcon,
+      #todayIcon,
+      #bookMarkIcon {
+        font-size: 25px;
+      }
+      .homeDiv,
+      .notifyDiv,
+      .todayDiv,
+      .bookDiv,
+      .logDiv {
+        width: 100%;
+        flex: 0.2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      .homeDiv {
+        border-top-right-radius: 10px;
+      }
+      .logDiv {
+        border-bottom-right-radius: 10px;
+      }
+      .homeDiv.home,
+      .notifyDiv.notify,
+      .todayDiv.today,
+      .bookDiv.book,
+      .logDiv.log {
+        color: white;
+        background-color: #12a14a;
+      }
+      .homeDiv:hover,
+      .notifyDiv:hover,
+      .todayDiv:hover,
+      .bookDiv:hover,
+      .logDiv:hover {
+        background-color: gray;
+      }
+    }
+    .rightBody {
+      height: 100%;
+      flex: 0.95;
+      overflow-y: scroll;
+      .gridDiv {
+        padding: 0px 10px;
+        margin-top: 1%;
+      }
+      .gridA {
+        width: 100%;
+        height: 100%;
+      }
+      .gridB {
+      }
+      .propTitle {
+        text-decoration: underline;
+      }
+      .titleText {
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        margin-top: 1%;
+      }
+      .imagesDiv {
+        width: 100%;
+      }
+      .maptext {
+        color: gray;
+      }
+      .mapIgDiv {
+        margin-top: 1%;
+      }
+      .vaImg {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+      .propertyDivv {
+        line-height: 165%;
+      }
+      .propCon {
+        display: flex;
+      }
+      .propLeft {
+        flex: 0.5;
+        color: gray;
+      }
+      .propRight {
+        flex: 0.5;
+      }
+      .mapImg {
+        width: 50%;
+        border-radius: 10px;
+      }
+      .describeDiv {
+        margin-top: 1%;
+      }
+      .arrowSpan {
+        margin-right: 2%;
+      }
+      #backArrow {
+        cursor: pointer;
+      }
+    }
+  }
+}
