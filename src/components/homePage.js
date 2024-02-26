@@ -83,16 +83,16 @@ export default function HomePage() {
                 <LocationOnIcon id="locationIcon" />
                 <select className="locationSelect">
                   <option value="">Location</option>
-                  <option value="kovilpatti">kovilpatti</option>
-                  <option value="thoothukudi">thoothukudi</option>
+                  <option value="kovilpatti">Doha</option>
+                  <option value="thoothukudi">WestBay</option>
                 </select>
               </div>
               <div className="propertyDiv">
                 <ApartmentIcon id="propertyDiv" />
                 <select className="propertySelect">
                   <option value="">Property</option>
-                  <option value="kovilpatti">kovilpatti</option>
-                  <option value="thoothukudi">thoothukudi</option>
+                  <option value="kovilpatti">Apartments</option>
+                  <option value="thoothukudi">Buildings</option>
                 </select>
               </div>
             </div>
@@ -101,16 +101,16 @@ export default function HomePage() {
                 <AirlineSeatIndividualSuiteIcon id="bedIcon" />
                 <select className="bedSelect">
                   <option value="">Bedrooms</option>
-                  <option value="kovilpatti">kovilpatti</option>
-                  <option value="thoothukudi">thoothukudi</option>
+                  <option value="kovilpatti">1</option>
+                  <option value="thoothukudi">2</option>
                 </select>
               </div>
               <div className="amtDiv">
                 <TollIcon id="amtIcon" />
                 <select className="amtSelect">
                   <option value="">Price</option>
-                  <option value="kovilpatti">kovilpatti</option>
-                  <option value="thoothukudi">thoothukudi</option>
+                  <option value="kovilpatti">&gt; QAR1000</option>
+                  <option value="thoothukudi">&gt; QAR2000</option>
                 </select>
               </div>
             </div>
