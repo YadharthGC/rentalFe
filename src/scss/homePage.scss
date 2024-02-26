@@ -1,0 +1,182 @@
+#homePage {
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  height: auto;
+  background-color: #edf1f4;
+  background-image: url("../images/bma.png");
+  .header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    // border: solid 1px yellow;
+  }
+  .leftHead {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 0.2;
+  }
+  .centerHead {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 0.6;
+  }
+  .rightHead {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 0.2;
+  }
+  .homeDiv,
+  .aboutDiv,
+  .discDiv,
+  .conDiv,
+  .signInDiv,
+  .signUpDiv {
+    cursor: pointer;
+  }
+  .homeDiv:hover,
+  .aboutDiv:hover,
+  .discDiv:hover,
+  .conDiv:hover {
+    text-decoration: underline;
+  }
+  .signInDiv,
+  .signUpDiv {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 1px gray;
+    cursor: pointer;
+  }
+  .signInDiv:hover,
+  .signUpDiv:hover {
+    background-color: #12a14a;
+    color: white;
+    border: solid 1px #12a14a;
+  }
+  .body {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 80vh;
+    height: auto;
+  }
+  .bodyA {
+    font-size: 30px;
+    font-weight: 600;
+    // margin-top: 5%;
+    line-height: 150%;
+  }
+  .highGreen {
+    color: #12a14a;
+    font-weight: 900;
+  }
+  .bodyB {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5%;
+  }
+  .numDiv {
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .numSpan {
+    color: #12a14a;
+    font-weight: 600;
+  }
+  .textDiv {
+    color: gray;
+  }
+  .bedSelect,
+  .locationSelect,
+  .amtSelect,
+  .propertySelect {
+    padding: 5px;
+    border: none;
+    width: 90%;
+    font-size: 15px;
+  }
+  .bedSelect:focus,
+  .locationSelect:focus,
+  .amtSelect:focus,
+  .propertySelect:focus {
+    outline: none;
+  }
+  .topicDiv {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+  }
+  .buyDiv,
+  .rentDiv,
+  .sellDiv {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: solid 1px gray;
+    cursor: pointer;
+  }
+  // .buyDiv:hover,
+  // .rentDiv:hover,
+  // .sellDiv:hover {
+  //   background-color: #12a14a;
+  //   color: white;
+  //   border: solid 1px #12a14a;
+  //   cursor: pointer;
+  // }
+  .buyDiv.buy,
+  .rentDiv.rent,
+  .sellDiv.sell {
+    background-color: #12a14a;
+    color: white;
+    border: solid 1px #12a14a;
+  }
+  .locProDiv,
+  .bedAmtDiv {
+    display: flex;
+    // flex-wrap: wrap;
+    // column-gap: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+  .locProDiv {
+  }
+  .detailsDiv {
+    // background-color: white;
+    padding: 10px 0px;
+    width: 30%;
+    border-radius: 10px;
+    // box-shadow: 6px 6px 20px -1px rgba(0, 0, 0, 0.75);
+  }
+  .locationDiv,
+  .bedDiv,
+  .amtDiv,
+  .propertyDiv {
+    background-color: white;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border: solid 1px gray;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .searchDiv {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .searchSub {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: #12a14a;
+  }
+}
