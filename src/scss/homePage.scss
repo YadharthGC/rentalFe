@@ -52,8 +52,8 @@
     border: solid 1px gray;
     cursor: pointer;
   }
-  .signInDiv:hover,
-  .signUpDiv:hover {
+  .signInDiv,
+  .signUpDiv {
     background-color: #12a14a;
     color: white;
     border: solid 1px #12a14a;
@@ -291,8 +291,8 @@
       border: solid 1px gray;
       cursor: pointer;
     }
-    .signInDiv:hover,
-    .signUpDiv:hover {
+    .signInDiv,
+    .signUpDiv {
       background-color: #12a14a;
       color: white;
       border: solid 1px #12a14a;

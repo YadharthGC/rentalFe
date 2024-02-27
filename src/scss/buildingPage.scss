@@ -409,6 +409,9 @@
 .fi {
   width: 100% !important ;
   height: 100%;
+  margin: 0px;
+  padding: 0px;
+  margin-top: -1%;
 }
 .cus {
   font-family: "Rubik", sans-serif;
@@ -421,6 +424,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 20%;
+    margin-bottom: 3%;
   }
   .numDiv {
     font-size: 30px;
@@ -438,5 +442,57 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .foot {
+    border-top: solid 1px lightgray;
+    padding: 20px 80px;
+    margin-top: 3%;
+  }
+  .footA {
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footB {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: gray;
+  }
+  .title {
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .part {
+    font-size: 13px;
+    color: gray;
+    margin-top: 10px;
+  }
+  .aicons {
+    width: 300px;
+    text-align: end;
+  }
+  #sicon {
+    font-size: 20px;
+    margin-left: 2%;
+  }
+
+  .firstText {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .secondText {
+    padding: 0% 30%;
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 3%;
   }
 }

@@ -8,7 +8,7 @@ import AirlineSeatIndividualSuiteIcon from "@mui/icons-material/AirlineSeatIndiv
 import SearchIcon from "@mui/icons-material/Search";
 import { useNavigate } from "react-router-dom";
 
-export default function NxtDem() {
+export default function NxtDem0() {
   const [status, setStatus] = useState("buy");
   const navigate = useNavigate();
   useEffect(() => {
@@ -86,7 +86,7 @@ export default function NxtDem() {
             <input type="text" placeholder="property type" className="inA" />
           </div>
           <div className="subText">
-            <div className="sub">Search outcome</div>
+            <div className="sub">Search</div>
           </div>
         </div>
       </div>
