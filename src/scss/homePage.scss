@@ -59,10 +59,11 @@
     border: solid 1px #12a14a;
   }
   .body {
+    height: 100%;
     padding: 0px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
     min-height: 80vh;
     height: auto;
   }
@@ -109,19 +110,32 @@
   }
   .topicDiv {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 10px;
+    // flex-wrap: wrap;
+    // column-gap: 10px;
   }
   .buyDiv,
   .rentDiv,
   .sellDiv {
+    flex: 1;
+    text-align: center;
+    height: 100%;
     background-color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 15px 20px;
+    // border-radius: 10px;
     margin-top: 1%;
     margin-bottom: 1%;
-    border: solid 1px gray;
+    border-right: solid 1px gray;
+    border-bottom: solid 1px gray;
     cursor: pointer;
+    margin: 0px;
+  }
+  .buyDiv {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+  }
+  .sellDiv {
+    border-top-right-radius: 10px;
+    border-right: none;
   }
   // .buyDiv:hover,
   // .rentDiv:hover,
@@ -145,13 +159,14 @@
     // column-gap: 10px;
     margin-bottom: 10px;
     justify-content: space-between;
+    padding: 0px 20px;
   }
   .locProDiv {
   }
   .detailsDiv {
     // background-color: white;
-    padding: 10px 0px;
-    width: 30%;
+    padding: 10px 10px;
+    // width: 30%;
     border-radius: 10px;
     // box-shadow: 6px 6px 20px -1px rgba(0, 0, 0, 0.75);
   }
@@ -168,15 +183,59 @@
     border-radius: 10px;
   }
   .searchDiv {
+    margin-top: 9%;
+    padding: 0px 20px;
     display: flex;
     justify-content: flex-end;
   }
   .searchSub {
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     color: white;
     background-color: #12a14a;
+  }
+  .bodyC {
+    background-color: white;
+    width: 450px;
+    border-radius: 10px;
+    border: solid 1px gray;
+  }
+  .locTop {
+    // font-size: 13px;
+    // position: relative;
+    // top: 8px;
+    // left: 35px;
+    // background: transparent;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    // padding-right: 5px;
+    padding: 0px 20px;
+  }
+  .locTopDiv {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+  }
+  #locTopIcon {
+    font-size: 25px;
+  }
+  .locTnt {
+    margin-top: 6%;
+  }
+  .locSelect {
+    font-size: 15px;
+    border: solid 1px gray;
+    padding: 15px 10px;
+    // padding-right: 20px;
+    font-weight: lighter;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #edf1f4;
+  }
+  .locSelect:focus {
+    outline: none;
   }
 }
