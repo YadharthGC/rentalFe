@@ -87,7 +87,7 @@
   }
   .rightBody {
     height: 100%;
-    flex: 0.95;
+    flex: 1;
   }
   .upDiv {
     flex: 1;
@@ -140,17 +140,30 @@
   }
   .bodyB {
     height: 100%;
-    overflow-y: scroll;
-    padding: 0px 10px;
+    // overflow-y: scroll;
+    padding: 0px 60px;
     display: flex;
+
     flex-wrap: wrap;
     gap: 5%;
+  }
+  .bodyB::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  /* Track */
+  .bodyB::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  .bodyB::-webkit-scrollbar-thumb {
+    background: #888;
   }
   .cardDiv {
     width: 30%;
     background: white;
     border-radius: 10px;
-    // margin-top: 10px;
   }
   .cardImg {
     cursor: pointer;
@@ -186,85 +199,244 @@
   .qarPrice {
     font-weight: 600;
   }
-  // .bodyA {
-  //   display: flex;
-  // }
-  // .leftBody {
-  //   height: 100%;
-  //   // height: 300px;
-  //   border: solid 1px black;
-  //   padding: 10px;
-  // }
-  // .rightBody {
-  //   border: solid 1px blue;
-  //   flex: 1;
-  //   padding: 0px 20px;
-  // }
-  // .cardImg {
-  //   width: 345px;
-  //   height: 195px;
-  //   border-top-left-radius: 10px;
-  //   border-top-right-radius: 10px;
-  // }
-  // .bodyB {
-  //   border: solid 1px blue;
-  //   display: grid;
-  //   // flex-wrap: wrap;
-  //   gap: 10px;
-  //   grid-template-columns: auto auto auto auto;
-  // }
-  // .cardDiv {
-  //   width: 345px;
-  //   background: white;
-  //   border-radius: 10px;
-  //   // margin-top: 10px;
-  // }
-  // .cardTextDiv {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-  //   padding: 10px;
-  // }
-  // .textLeft {
-  //   flex: 0.8;
-  //   overflow: hidden;
-  //   text-overflow: ellipsis;
-  // }
-  // .textRight {
-  //   flex: 0.2;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: flex-end;
-  // }
-  // .textWrap {
-  //   white-space: nowrap;
-  //   width: 100%;
-  //   overflow: hidden;
-  //   text-overflow: ellipsis;
-  //   color: gray;
-  // }
-  // .qarPrice {
-  //   font-weight: 600;
-  // }
-  // #homeIcon,
-  // #notifyIcon,
-  // #todayIcon,
-  // #bookMarkIcon {
-  //   font-size: 25px;
-  // }
-  // #logOutIcon {
-  //   font-size: 25px;
-  // }
-  // .upDiv {
-  //   height: 50%;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-between;
-  // }
-  // .downDiv {
-  //   height: 50%;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: flex-end;
-  // }
+}
+
+#demoPage {
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+  background-color: #edf1f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .firstText {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+  }
+  .secondText {
+    padding: 0% 30%;
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+    font-weight: 600;
+  }
+  .cardDiv {
+    // width: 30%;
+    background: white;
+    border-radius: 10px;
+  }
+  .cardImg {
+    cursor: pointer;
+    width: 400px;
+    height: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .cardTextDiv {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    padding: 10px 30px;
+    padding-bottom: 15px;
+    border-bottom: solid 2px black;
+    border-radius: 10px;
+  }
+  .textLeft {
+    flex: 0.8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .textRight {
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .textWrap {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+  }
+  .qarPrice {
+    font-weight: 600;
+  }
+  .bodyB {
+    // height: 100%;
+    // overflow-y: scroll;
+    padding: 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .oneDiv {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+  }
+  .ab {
+    padding: 5px 5px;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+  }
+  .ba {
+    margin-left: 3%;
+    padding: 5px 5px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+  }
+  .proName {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 25px;
+  }
+  .proloc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+  }
+  .ll {
+    display: flex;
+    align-items: center;
+  }
+  #tt {
+    font-size: 17px;
+  }
+  .sinna {
+    margin-top: 15px;
+    font-size: 15px;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+  }
+  .bhk,
+  .bed,
+  .mm {
+    display: flex;
+    align-items: center;
+  }
+  .rs {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #aa {
+    font-size: 20px;
+    color: blue;
+  }
+  .secondText {
+    margin-top: 10px;
+    margin-bottom: 4%;
+  }
+  .btncc {
+    display: flex;
+    justify-content: center;
+  }
+  .viewBtn {
+    background-color: rgb(88, 88, 196);
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 4%;
+  }
+}
+
+#demoPage.final {
+  background-color: white;
+  .bodyB {
+  }
+  #evaluate {
+    font-size: 50px;
+    color: green;
+  }
+  .cardImgDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rb {
+    border: solid 2px green;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  .rb.c {
+    border: solid 2px orange;
+  }
+  .rb.d {
+    border: solid 2px blue;
+  }
+  .proName {
+    margin-top: 4%;
+    text-align: center;
+    font-size: 20px;
+  }
+  .des {
+    margin-top: 4%;
+    text-align: center;
+    width: 400px;
+    font-size: 15px;
+    color: gray;
+  }
+  #evaluateb {
+    font-size: 50px;
+    color: orange;
+  }
+  #evaluatec {
+    font-size: 50px;
+    color: blue;
+  }
+  .cardTextDiv {
+    border: none;
+  }
+  .bodyB {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+  }
+}
+
+.fi {
+  width: 100% !important ;
+  height: 100%;
+}
+.cus {
+  font-family: "Rubik", sans-serif;
+  background-color: #edf1f4;
+  padding-top: 40px;
+  padding: 40px 0px;
+  .bodyB {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20%;
+  }
+  .numDiv {
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .numSpan {
+    color: #12a14a;
+    font-weight: 600;
+  }
+  .textDiv {
+    color: gray;
+  }
+  .e {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -93,12 +93,12 @@ export default function BuildingPage() {
               setHeadStatus("buy");
             }}
           >
-            Buy
+            {/* Buy
             {headStatus === "buy" ? (
               <div className="selectRound">&#9679;</div>
             ) : (
               ""
-            )}
+            )} */}
           </div>
           <div
             className={`rentDiv ${headStatus}`}
@@ -106,12 +106,12 @@ export default function BuildingPage() {
               setHeadStatus("rent");
             }}
           >
-            Rent{" "}
+            {/* Rent{" "}
             {headStatus === "rent" ? (
               <div className="selectRound">&#9679;</div>
             ) : (
               ""
-            )}
+            )} */}
           </div>
           <div
             className={`sellDiv ${headStatus}`}
@@ -119,12 +119,12 @@ export default function BuildingPage() {
               setHeadStatus("sell");
             }}
           >
-            Sell{" "}
+            {/* Sell{" "}
             {headStatus === "sell" ? (
               <div className="selectRound">&#9679;</div>
             ) : (
               ""
-            )}
+            )} */}
           </div>
           <div className="searchDiv">
             <SearchIcon id="searchIcon" />
@@ -143,7 +143,7 @@ export default function BuildingPage() {
         </div>
       </div>
       <div className="body">
-        <div className="leftBody">
+        {/* <div className="leftBody">
           <div className="upDiv">
             <div
               className={`homeDiv ${bodyStatus}`}
@@ -187,8 +187,16 @@ export default function BuildingPage() {
               <LogoutIcon id="logOutIcon" />
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="rightBody">
+          <div className="summa">
+            Discover your perfect sanctuary amidst the sands.
+          </div>
+          <div className="summaB">
+            Find your ideal rental oasis in Qatar.Embark on a journey of
+            discovery through our diverse range of properties. Explore Qatar's
+            finest rentals, tailored to your lifestyle."
+          </div>
           <div className="bodyB">
             {villas.map((data) => {
               return (

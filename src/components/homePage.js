@@ -58,7 +58,7 @@ export default function HomePage() {
                 setStatus("buy");
               }}
             >
-              Buy
+              Rent
             </div>
             {/* <div
               className={`rentDiv ${status}`}

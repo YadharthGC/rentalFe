@@ -116,12 +116,12 @@ export default function DetailPage() {
               setHeadStatus("buy");
             }}
           >
-            Buy
+            {/* Buy
             {headStatus === "buy" ? (
               <div className="selectRound">&#9679;</div>
             ) : (
               ""
-            )}
+            )} */}
           </div>
           <div
             className={`rentDiv ${headStatus}`}
@@ -129,12 +129,12 @@ export default function DetailPage() {
               setHeadStatus("rent");
             }}
           >
-            Rent{" "}
+            {/* Rent{" "}
             {headStatus === "rent" ? (
               <div className="selectRound">&#9679;</div>
             ) : (
               ""
-            )}
+            )} */}
           </div>
           <div
             className={`sellDiv ${headStatus}`}
@@ -142,12 +142,12 @@ export default function DetailPage() {
               setHeadStatus("sell");
             }}
           >
-            Sell{" "}
+            {/* Sell{" "}
             {headStatus === "sell" ? (
               <div className="selectRound">&#9679;</div>
             ) : (
               ""
-            )}
+            )} */}
           </div>
           <div className="searchDiv">
             <SearchIcon id="searchIcon" />
